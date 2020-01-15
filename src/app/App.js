@@ -10,7 +10,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import { floors } from "./constants/floors";
 
-function App() {
+
+
+ function App() {
   const [isminified, setMinified] = useState(true); // initialize state to handle class changes on infobox (simple true/false check!)
   const [kitchens, setKitchens] = useState(undefined); // set state for kitchen stores
   const [kitchen, setKitchen] = useState(); // local state for infoBox
@@ -90,6 +92,6 @@ function App() {
       </div>
     </Router>
   );
-}
+ }
 
 export default App;
