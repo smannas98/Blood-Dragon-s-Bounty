@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,700,700i,900,900i&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}

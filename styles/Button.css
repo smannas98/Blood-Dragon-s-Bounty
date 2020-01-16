@@ -1,0 +1,14 @@
+button {
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+button.primary {
+    background-color: #5C4B62;
+    color: #fff;
+}
+
+button.secondary {
+    
+}

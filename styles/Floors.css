@@ -1,0 +1,52 @@
+.floor__nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-items: space-between;
+}
+
+.floor__box {
+  width: calc(50% - 2rem);
+  margin: 1rem;
+  background-color: #EEEAF2;
+  border-radius: 3rem;
+  min-height: 12rem;
+  padding: 3rem;
+  color: #5C4B62;
+}
+
+.floor__box__header {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.floor__box__indicator {
+  width: 10%;
+  padding-bottom: 0.5rem;
+}
+
+.floor__box__message {
+  width: 90%;
+}
+
+
+.floor__box__tag,
+.floor__box__number {
+    margin: 0;
+    padding: 0;
+    display: block;
+    line-height: 1.5rem;
+}
+
+.floor__box__tag {
+  font-weight: 600;
+  font-size: small;
+  text-transform: lowercase;
+}
+
+.floor__box__number {
+  font-weight: 900;
+  font-size: 3rem;
+}
