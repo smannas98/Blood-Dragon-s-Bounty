@@ -79,15 +79,14 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         defaultValue: 0
-      },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
       }
+      // },
+      // createdAt: {
+      //   type: Sequelize.DATE,
+      // },
+      // updatedAt: {
+      //   type: Sequelize.DATE,
+      // }
     });
   },
   down: (queryInterface, Sequelize) => {
