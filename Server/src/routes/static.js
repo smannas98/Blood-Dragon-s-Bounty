@@ -6,6 +6,7 @@ const router = express.Router();
 router.get('/', (req, res, next) => {
    Kitchens.findAll()
     .then(_kitchens => {  
+        console.log(Array.isArray(_kitchens));
         res.send(_kitchens[0]);
     }).catch((err) => {
         console.log(err);
