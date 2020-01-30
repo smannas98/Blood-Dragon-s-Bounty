@@ -7,4 +7,8 @@ const app = express();
 appConfig.init(app, express);
 routeConfig.init(app);
 
+<<<<<<< HEAD
 module.exports = app;
+=======
+module.exports = app;
+>>>>>>> e4bfb8e1a45901636a249183e19dccd8bbcec711
