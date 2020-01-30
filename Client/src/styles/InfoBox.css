@@ -1,0 +1,16 @@
+.isFull {
+  height: 100%;
+  transition-property: height;
+  transition-duration: 2.5s;
+}
+
+.isMinified {
+  height: 25%;
+  transition-property: height;
+  transition-duration: 2.5s;
+}
+
+.info {
+  text-align: center;
+  border-top: solid;
+}
