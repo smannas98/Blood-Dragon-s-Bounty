@@ -8,16 +8,20 @@ app.set('port', port);
 server.listen(port);
 
 function normalizePort(val) {
-    const port = parseInt(val, 10);
-    if (isNaN(port)) {
-        return val;
-    }
-    if (port >= 0) {
-        return port;
-    }
-    return false;
+  // idk man :/
+  const port = parseInt(val, 10);
+  if (isNaN(port)) {
+    return val;
+  }
+  if (port >= 0) {
+    return port;
+  }
+  return false;
 }
 
 server.on('listening', () => {
-    console.log(`server is listening for requests on port ${server.address().port}`);
-})
+  // turn on.
+  console.log(
+    `server is listening for requests on port ${server.address().port}`
+  );
+});

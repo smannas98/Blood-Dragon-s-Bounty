@@ -2,6 +2,18 @@ import React from "react";
 import "../styles/FloorMap.css";
 import Button from "./Button";
 
+function renderFloorIndicator() {
+  if (floor === 1) {
+    return "1st Floor";
+  }
+  if (floor === 3) {
+    return "3rd Floor";
+  }
+  if (floor === 4) {
+    return "4th Floor";
+  }
+}
+
 export default function FloorMap(props) {
   const floorStyles = {
     width: "100%",

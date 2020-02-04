@@ -1,37 +1,86 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,700,700i,900,900i&display=swap');
+@import '../styles/dist/bootstrap.min.css';
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+  height: 100%;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: white;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__container {
+  padding-bottom: 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #5C4B62;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.display-header-1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #5C4B62;
+  line-height: 1;
+}
+
+.display-header-2 {
+  color: #A9A0B5;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.display-4 {
+  font-size: 3rem
+}
+
+.container {
+  max-width: 1500px;
+}
+
+.slide-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.slide-exit {
+  opacity: 1;
+}
+.slide-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }

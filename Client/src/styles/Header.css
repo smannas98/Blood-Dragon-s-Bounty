@@ -1,0 +1,47 @@
+.app__header {
+    background-color: #EAF7BD;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    z-index: 10;
+}
+
+.app__header .app__header__logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    width: 100%;
+    position: absolute;
+    display: block;
+    background-color: #52A9B2;
+    border-radius: 2rem;
+    top: -3rem;
+    left: 22%;
+    width: 30rem;
+    height: 11rem;
+    transform: rotate(-13deg);
+}
+
+.app__header .app__header__logo .app__header__logo__inner {
+    position: absolute;
+    transform: rotate(13deg);
+    top: 2rem;
+    left: 2rem;
+}
+
+.app__header .app__header__logo .app__header__line1 {
+
+}
+
+.app__header .app__header__logo .app__header__line2 {
+    display: block;
+    font-size: 5rem;
+    line-height: 3rem;
+}
+
+.app__header__nav {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
+}

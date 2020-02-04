@@ -1,25 +1,14 @@
-require("dotenv").config();
-const bodyParser = require("body-parser");
-const logger = require("morgan");
-// const expressValidator = require('express-validator')
-// const session = require('express-session')
-// const cookieParser = require('cookie-parser')
-const cors = require("cors");
+require('dotenv').config();
+const bodyParser = require('body-parser');
+const logger = require('morgan');
+const cors = require('cors');
 
 module.exports = {
   init(app, express) {
-    app.use(cors());
-    app.use(bodyParser.urlencoded({ extended: true }));
-    // app.use(cookieParser())
-    // app.use(expressValidator());
-    // app.use(
-    //     session({
-    //         secret: process.env.COOKIE_SECRET,
-    //         resave: false,
-    //         saveUninitialized: false,
-    //         cookie: { maxAge: 1.21e9 },
-    //     })
-    // )
-    app.use(logger("dev"));
-  }
+    // init callback function
+    app.use(cors()); // enables Cross-Origin Resource Sharing
+    app.use(bodyParser.json()); // Parse incoming JSON objects from Client
+    app.use(bodyParser.urlencoded({ extended: true })); // parse URL request from Client
+    app.use(logger('dev')); // ¯\_(ツ)_/¯
+  },
 };

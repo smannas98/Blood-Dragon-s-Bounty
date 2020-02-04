@@ -1,4 +1,4 @@
-const kitchens = [
+export const kitchens = [
   {
     id: 11,
     Name: "kitchen011",

@@ -1,0 +1,14 @@
+.kitchen-main {
+    margin-top: 15rem;
+    height: calc(100vh - 15rem);
+}
+
+.kitchen-main__hero {
+    background-color: gray;
+    height: 50vh;
+}
+
+.kitchen-main__hero .kitchen-main__hero__inner {
+    top: 50%;
+    transform: translateY(-50%);
+}

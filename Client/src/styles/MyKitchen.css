@@ -1,0 +1,29 @@
+.mykitchen__section {
+    /*height: 50vh;once you get the preferred kitchen working */
+    height: 30vh;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    /* background-color: #EAF7BD; */
+}
+
+.mykitchen__bg {
+    display: block;
+    position: absolute;
+    float: left;
+    top: -52%;
+    left: -27%;
+    width: 150%;
+    /* height: 150%; once you get the preferred kitchen working */
+    height: 100%;
+    background-color: #EAF7BD;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.mykitchen__section__inner {
+    margin: 10rem auto 0;
+    z-index: 1;
+    text-align: center;
+}

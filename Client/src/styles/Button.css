@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.button:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.primary,
+.primary:focus,
+.primary:active {
+    background-color: #5C4B62;
+    color: #fff;
+}
+
+.primary:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.secondary {
+    
+}

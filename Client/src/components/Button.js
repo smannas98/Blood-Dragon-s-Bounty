@@ -1,26 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Button.css"
 
-export default function Button(props) {
-  const buttonStyles = {
-    width: "45%",
-    display: "inline-block",
-    margin: "10px"
-  };
+const Button = (props) => {
+
   // simple Button component with generic eventHandler, ID, and Button Text.
   return (
     <span>
-      <button
-        className="button is-primary"
-        style={buttonStyles}
-        onClick={props.onclick}
-        id={props.id}
-      >
-        {props.currentValue ? (
-          `${props.text}${" "}${props.currentValue}`
-        ) : (
-          <strong>{props.text}</strong>
-        )}
-      </button>
+      <Link to={props.to} className={`button ${props.type}`}>
+        {props.text}
+      </Link>
     </span>
   );
 }
+
+export default Button
