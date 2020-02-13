@@ -1,0 +1,79 @@
+:root {
+    --bg: #fff;
+    --bg-accent: #f1f1f1;
+    --indigo: #5C4B62;
+    --indigo-text: #5C4B62;
+    --purple: #6f42c1;
+    --violet: #92889c;
+    --pink: #eeeaf2;
+    --red: #e22121;
+    --teal: #52A9B2;
+    --teal-text: #52A9B2;
+    --teal-sheer: #52a8b25e;
+    --cyan: #6cbbc4;
+    --cyan-text: #6cbbc4;
+    --lime: #EAF7BD;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #fff;
+    --light-text: #fff;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1920px;
+    --font-size-base: 16px;
+    --font-family-sans-serif: "Raleway", Helvetica, Arial, sans-serif;
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --font-size-base: 20px
+  }
+}
+
+@media (prefers-color-scheme: light) {
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #333333;
+    --bg-accent: #545454;
+    --indigo: #433763;
+    --indigo-text: #f1c9ff;
+    --purple: #6f42c1;
+    --violet: #92889c;
+    --pink: #574767;
+    --red: #a31b1b;
+    --blood-orange: #cf4040;
+    --teal: #0d95a7;
+    --teal-text: #d3fbff;
+    --teal-sheer: #bdf8ff;
+    --cyan: #94f4ff;
+    --cyan-text: #94f4ff;
+    --lime: #90a24b;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #cccccc;
+    --light-text: #fff;
+    --dark: #f0f0f0;
+    --dark-text: #fff;
+  }
+}

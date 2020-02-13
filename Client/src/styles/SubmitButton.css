@@ -1,0 +1,38 @@
+.submit__wrapper {
+    position: absolute;
+    bottom: -2rem;
+    width: 100%;
+    visibility: hidden;
+    /* bottom: -5rem; */
+    transform: scale(0.7);
+    left: 0;
+    height: 6rem;
+    transition: all 300ms ease;
+}
+
+.submit__wrapper--in {
+    transform: scale(1);
+    bottom: 2.5rem;
+    visibility: visible;
+}
+
+.submit__button {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    background-color: var(--indigo);
+    border: 0;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 0rem 3rem 0.5rem;
+    color: var(--light-text);
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 200ms ease;
+}
+
+.submit__button:hover,
+.submit__button:focus,
+.submit__button:active {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}

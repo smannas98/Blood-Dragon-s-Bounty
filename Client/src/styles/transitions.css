@@ -1,0 +1,39 @@
+/* FloorView */
+
+.transition-floors-enter {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+
+.transition-floors-active
+.transition-floors-enter-done {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* .transition-floors-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.transition-floors-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+} */
+
+/* KitchenView */
+
+.transition-kitchen {
+  transform: translateY(200%);
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+.transition-kitchen-enter,
+.transition-kitchen-active,
+.transition-kitchen-enter-done {
+  opacity: 1;
+  transform: translateY(0);
+}

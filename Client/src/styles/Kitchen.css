@@ -1,14 +1,68 @@
 .kitchen-main {
-    margin-top: 15rem;
-    height: calc(100vh - 15rem);
+  overflow: hidden;
 }
 
 .kitchen-main__hero {
-    background-color: gray;
-    height: 50vh;
+  background-color: var(--bg-accent);
+  height: 55vh;
+  position: relative;
 }
 
 .kitchen-main__hero .kitchen-main__hero__inner {
-    top: 50%;
-    transform: translateY(-50%);
+  top: 42%;
+  transform: translateY(-50%);
+  position: relative;
+}
+.kitchen-main__hero .kitchen-main__hero__inner > h1 {
+  user-select: none;
+}
+
+.kitchen-main__hero__image {
+  position: absolute;
+  top: -65%;
+  left: 0;
+  max-width: 100%;
+  opacity: 25%;
+  /* filter: blur(2px); */
+}
+
+.kitchen-main__content {
+  position: relative;
+}
+
+.kitchen-main__content:before {
+    content: "";
+    position: absolute;
+    top: -4rem;
+    left: -50%;
+    width: 200%;
+    height: 50rem;
+    background-color: var(--bg);
+    border-radius: 50%;
+}
+
+.icon-grid {
+  margin: 0 auto 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(5rem, auto);
+}
+
+.clear-all-link {
+  opacity: 0;
+  animation: fadeIn 200ms ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@media (min-width: 576px) {
+  .icon-grid {
+    max-width: 50%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+  }
 }

@@ -8,18 +8,18 @@
     margin-left: 0;
 }
 
-.primary,
+/* .primary,
 .primary:focus,
 .primary:active {
-    background-color: #5C4B62;
+    background-color: var(--indigo);
     color: #fff;
 }
 
 .primary:hover {
     color: #fff;
     text-decoration: underline;
-}
-
+} */
+/* 
 .secondary {
     
-}
+} */

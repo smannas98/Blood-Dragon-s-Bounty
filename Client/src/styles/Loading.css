@@ -1,0 +1,17 @@
+.loading-icon__wrapper {
+    display: inline-block;
+    width: 100%;
+}
+
+.loading-icon__wrapper .food-icon-loading {
+    margin: 0 auto;
+}
+
+.loading-icon__error {
+    animation: fadeIn 2000ms forwards ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0}
+    to { opacity: 1 }
+}

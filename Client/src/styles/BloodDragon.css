@@ -1,0 +1,14 @@
+.blood-dragon {
+    position: fixed;
+    bottom: 0;
+    left: 100%;
+    z-index: 9999;
+    animation: flight 3000ms forwards ease-in-out;
+}
+
+@keyframes flight {
+    0% { left: 70%; bottom: -100%; filter: brightness(0)}
+    40% { left: 20%; bottom: 20%;}
+    80% { left: 15%; bottom: 15%; filter: brightness(1);}
+    100% { left: 0; bottom: 100%;}
+}

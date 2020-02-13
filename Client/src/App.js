@@ -3,21 +3,15 @@ import React, { useState, useEffect } from "react";
 //Dependencies
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useLocation,
-  useParams,
-  Redirect
 } from "react-router-dom";
+
+//Styles
+import './styles/dist/bootstrap.min.css';
+import "./styles/App.css";
 
 //Components
 import EatsApp from "./components/EatsApp";
-
-//Styles
-import "./styles/nav.css";
-import "./styles/App.css";
 
 function App() {
 
