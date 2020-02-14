@@ -22,7 +22,7 @@ const updateHistory = data => {
 const midnightUpdate = () => {
   let hours = new Date().getHours();
 
-  if (hours == '10') {
+  if (hours == '00') {
     // update DB
     let foods = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     Foodstores.update({ quantity: 0 }, { where: { foodId: foods } })
@@ -35,7 +35,7 @@ const midnightUpdate = () => {
   }
 };
 
-setInterval(midnightUpdate, 30000);
+setInterval(midnightUpdate, 1800000);
 
 module.exports = {
   getKitchen(req, res, next) {
